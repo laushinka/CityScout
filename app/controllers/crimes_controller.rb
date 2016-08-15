@@ -1,5 +1,6 @@
 class CrimesController < ApplicationController
   def index
-      render json: Crime.all
+      @crimes = Crime.all
+      render json: @crimes
   end
 end

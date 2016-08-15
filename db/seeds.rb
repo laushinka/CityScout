@@ -1,1 +1,1 @@
-Dir["data/*.rb"].each{|s| load s }
+Dir.glob("./db/data/*.rb").each { |file| load(file)}
